@@ -10,8 +10,8 @@
 </template>
 <script lang='ts'>
 import { defineComponent, ref } from 'vue'
-import { useLayoutStore } from '/@/store/modules/layout'
-import changeThemeColor from '/@/utils/changeThemeColor'
+import { useLayoutStore } from '@/store/modules/layout'
+import changeThemeColor from '@/utils/changeThemeColor'
 
 export default defineComponent({
     name: 'LayoutTheme',

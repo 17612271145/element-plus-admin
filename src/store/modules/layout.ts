@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia'
-import { login, loginParam, getRouterList, getUser } from '/@/api/layout/index'
-import { ILayout, IMenubarStatus, ITagsList, IMenubarList, ISetting, IMenubar, IStatus, ITags, IUserInfo } from '/@/type/store/layout'
-import router from '/@/router/index'
-import { allowRouter } from '/@/router/index'
-import { generatorDynamicRouter } from '/@/router/asyncRouter'
-import { setLocal, getLocal, decode } from '/@/utils/tools'
+import { login, loginParam, getRouterList, getUser } from '@/api/layout/index'
+import { ILayout, IMenubarStatus, ITagsList, IMenubarList, ISetting, IMenubar, IStatus, ITags, IUserInfo } from '@/type/store/layout'
+import router from '@/router/index'
+import { allowRouter } from '@/router/index'
+import { generatorDynamicRouter } from '@/router/asyncRouter'
+import { setLocal, getLocal, decode } from '@/utils/tools'
 import { RouteLocationNormalizedLoaded } from 'vue-router'
 
 const setting = getLocal<ISetting>('setting')

@@ -68,13 +68,13 @@
 
 <script lang="ts">
 import { defineComponent, reactive, ref } from 'vue'
-import TableSearch from '/@/components/TableSearch/index.vue'
-import CardList from '/@/components/CardList/CardList.vue'
-import CardListItem from '/@/components/CardList/CardListItem.vue'
-import { getTableList, ITag } from '/@/api/components/index'
-import { format, tableSummaries } from '/@/utils/tools'
-import { validate } from '/@/utils/formExtend'
-import { IRenderTableList } from '/@/type/views/Components/TableSearchTest'
+import TableSearch from '@/components/TableSearch/index.vue'
+import CardList from '@/components/CardList/CardList.vue'
+import CardListItem from '@/components/CardList/CardListItem.vue'
+import { getTableList, ITag } from '@/api/components/index'
+import { format, tableSummaries } from '@/utils/tools'
+import { validate } from '@/utils/formExtend'
+import { IRenderTableList } from '@/type/views/Components/TableSearchTest'
 
 interface ISearchForm {
     date: string

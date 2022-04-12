@@ -18,7 +18,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import List, { IList } from '/@/components/List/index.vue'
+import List, { IList } from '@/components/List/index.vue'
 
 export default defineComponent({
     name: 'ListTest',

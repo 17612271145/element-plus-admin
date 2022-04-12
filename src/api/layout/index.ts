@@ -1,6 +1,6 @@
-import request from '/@/utils/request'
+import request from '@/utils/request'
 import { AxiosResponse } from 'axios'
-import { IMenubarList } from '/@/type/store/layout'
+import { IMenubarList } from '@/type/store/layout'
 
 const api = {
     login: '/api/User/login',

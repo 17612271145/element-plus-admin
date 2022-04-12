@@ -36,7 +36,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import List, { IList } from '/@/components/List/index.vue'
+import List, { IList } from '@/components/List/index.vue'
 
 export default defineComponent({
     name: 'Notice',
@@ -61,20 +61,22 @@ export default defineComponent({
 
 <style lang='postcss' scoped>
 .notice-tabs {
-    margin: -10px 0;
-    border: none;
-    width: 300px;
+  margin: -10px 0;
+  border: none;
+  width: 300px;
 }
-.el-dropdown-menu{
-    padding: 10px 0;
+
+.el-dropdown-menu {
+  padding: 10px 0;
 }
+
 .notice-tabs-pane {
-    height: 400px;
-    overflow: hidden;
-    margin: -15px;
+  height: 400px;
+  overflow: hidden;
+  margin: -15px;
 }
 
 .scrollbar-wrapper {
-    padding: 15px;
+  padding: 15px;
 }
 </style>

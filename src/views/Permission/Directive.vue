@@ -40,8 +40,8 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { useLayoutStore } from '/@/store/modules/layout'
-import { checkPermission } from '/@/utils/permission'
+import { useLayoutStore } from '@/store/modules/layout'
+import { checkPermission } from '@/utils/permission'
 export default defineComponent({
     name: 'Directive',
     setup() {

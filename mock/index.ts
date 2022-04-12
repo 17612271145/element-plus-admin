@@ -1,6 +1,6 @@
 import { MockMethod } from 'vite-plugin-mock'
 import { mock, Random } from 'mockjs'
-import { login, setToken, checkToken, getUser, getRoute } from '/mock/response'
+import { login, setToken, checkToken, getUser, getRoute } from 'mock/response'
 
 export interface IReq { 
     body: any; 

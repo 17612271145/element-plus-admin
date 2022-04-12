@@ -1,9 +1,9 @@
-import router from '/@/router'
+import router from '@/router'
 import { configure, start, done } from 'nprogress'
 import { RouteRecordRaw } from 'vue-router'
-import { decode, encode } from '/@/utils/tools'
-import { useLayoutStore } from '/@/store/modules/layout'
-import { useLocal } from '/@/utils/tools'
+import { decode, encode } from '@/utils/tools'
+import { useLayoutStore } from '@/store/modules/layout'
+import { useLocal } from '@/utils/tools'
 
 configure({ showSpinner: false })
 

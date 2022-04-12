@@ -27,9 +27,9 @@
 
 <script lang="ts">
 import { defineComponent, nextTick, ref, watch, onBeforeUpdate, onMounted, reactive, Ref, ComponentInternalInstance } from 'vue'
-import { useLayoutStore } from '/@/store/modules/layout'
+import { useLayoutStore } from '@/store/modules/layout'
 import { useRoute } from 'vue-router'
-import { ITagsList } from '/@/type/store/layout'
+import { ITagsList } from '@/type/store/layout'
 
 // 右键菜单
 const rightMenu = () => {

@@ -35,7 +35,7 @@
 
 <script lang="ts">
 import { defineComponent, ref, SetupContext } from 'vue'
-import { slide } from '/@/utils/animate'
+import { slide } from '@/utils/animate'
 export default defineComponent({
     name: 'TableSearch',
     props: {
@@ -76,7 +76,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 .table-search-form {
-    overflow: hidden;
-    height: 0;
+  overflow: hidden;
+  height: 0;
 }
 </style>

@@ -18,8 +18,8 @@
 </template>
 <script lang='ts'>
 import { defineComponent, Ref, ref, watch } from 'vue'
-import { useLayoutStore } from '/@/store/modules/layout'
-import { IMenubarList, ISetting } from '/@/type/store/layout'
+import { useLayoutStore } from '@/store/modules/layout'
+import { IMenubarList, ISetting } from '@/type/store/layout'
 import { useRouter } from 'vue-router'
 import Fuse from 'fuse.js'
 
@@ -145,28 +145,28 @@ export default defineComponent({
 </script>
 
 <style lang='postcss' scoped>
-    ::v-deep(.el-input__inner) {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-radius: 0;
+  ::v-deep(.el-input__inner) {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  ::v-deep(.el-select__caret) {
+    display: none;
+  }
+
+  .layout-navbar-search {
+    .layout-navbar-search-select {
+      transition: width 0.2s;
+      width: 0;
+      overflow: hidden;
     }
 
-    ::v-deep(.el-select__caret) {
-        display: none;
+    &.open {
+      .layout-navbar-search-select {
+        width: 210px;
+      }
     }
-
-    .layout-navbar-search {
-        .layout-navbar-search-select {
-            transition: width 0.2s;
-            width: 0;
-            overflow: hidden;
-        }
-
-        &.open {
-            .layout-navbar-search-select {
-                width: 210px;
-            }
-        }
-    }
+  }
 </style>

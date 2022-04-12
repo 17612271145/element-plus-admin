@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { useLayoutStore } from '/@/store/modules/layout'
+import { useLayoutStore } from '@/store/modules/layout'
 
 interface IListItem {
     url?: string
@@ -73,74 +73,74 @@ export default defineComponent({
 </script>
 
 <style lang="postcss" scoped>
-    ::v-deep(.el-card__header) {
-        padding: 7px 15px;
-    }
+  ::v-deep(.el-card__header) {
+    padding: 7px 15px;
+  }
 
-    ::v-deep(.el-button) {
-        padding: 4px 6px;
-        border-radius: 3px;
-    }
+  ::v-deep(.el-button) {
+    padding: 4px 6px;
+    border-radius: 3px;
+  }
 
-    .card-list-header {
-        height: 28px;
-        line-height: 28px;
-    }
+  .card-list-header {
+    height: 28px;
+    line-height: 28px;
+  }
 
-    .card-list-body {
-        list-style: square;
+  .card-list-body {
+    list-style: square;
 
-        & > li {
-            list-style: square;
-            display: flex;
-            padding: 3px 0;
-            align-items: center;
-            justify-content: space-between;
+    & > li {
+      list-style: square;
+      display: flex;
+      padding: 3px 0;
+      align-items: center;
+      justify-content: space-between;
 
-            & > .card-list-mark {
-                color: #888;
-            }
+      & > .card-list-mark {
+        color: #888;
+      }
 
-            & > .card-list-text {
-                padding-right: 10px;
-                color: #666;
+      & > .card-list-text {
+        padding-right: 10px;
+        color: #666;
 
-                & > a:hover {
-                    color: v-bind(color.primary);
-                }
-
-                & > span.card-list-item-circle {
-                    display: inline-block;
-                    width: 5px;
-                    height: 5px;
-                    border-radius: 50%;
-                    background-color: #666;
-                    margin-right: 10px;
-                }
-
-                &.nowrap {
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-
-                    & > span.card-list-item-circle {
-                        transform: translateY(-50%);
-                    }
-                }
-
-                &.wrap {
-                    display: flex;
-                    align-items: center;
-
-                    & > span.card-list-item-circle {
-                        min-width: 5px;
-                        min-height: 5px;
-                        max-width: 5px;
-                        max-height: 5px;
-                    }
-                }
-            }
+        & > a:hover {
+          color: v-bind(color.primary);
         }
+
+        & > span.card-list-item-circle {
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: #666;
+          margin-right: 10px;
+        }
+
+        &.nowrap {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          & > span.card-list-item-circle {
+            transform: translateY(-50%);
+          }
+        }
+
+        &.wrap {
+          display: flex;
+          align-items: center;
+
+          & > span.card-list-item-circle {
+            min-width: 5px;
+            min-height: 5px;
+            max-width: 5px;
+            max-height: 5px;
+          }
+        }
+      }
     }
+  }
 </style>
     

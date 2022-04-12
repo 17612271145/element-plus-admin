@@ -20,10 +20,10 @@
 
 <script lang='ts'>
 import { defineComponent, computed } from 'vue'
-import MenubarItem from '/@/layout/components/menubarItem.vue'
+import MenubarItem from '@/layout/components/menubarItem.vue'
 import { useRoute, useRouter } from 'vue-router'
-import { IMenubarList } from '/@/type/store/layout'
-import { useLayoutStore } from '/@/store/modules/layout'
+import { IMenubarList } from '@/type/store/layout'
+import { useLayoutStore } from '@/store/modules/layout'
 
 // 过滤隐藏的菜单，并提取单条的子菜单
 const filterMenubar = (menuList:IMenubarList[]) => {

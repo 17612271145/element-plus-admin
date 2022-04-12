@@ -10,10 +10,12 @@ module.exports = {
                 "tailwind"
             ]
         }],
-        "indentation": 4,        // 4个空格
+        "indentation": 2,        // 2个空格
         "selector-pseudo-element-no-unknown": [true, {
             "ignorePseudoElements": ["v-deep"]
         }],
-        "value-keyword-case": null
+        "value-keyword-case": null,
+        "no-descending-specificity":null,
+        "at-rule-no-unknown":null
     }
 }

@@ -1,6 +1,6 @@
 import { ref, Ref } from 'vue'
 import { version } from 'element-plus'
-import { useLayoutStore } from '/@/store/modules/layout'
+import { useLayoutStore } from '@/store/modules/layout'
 
 const getTheme = (theme: string, prevTheme: Ref<string>) => {
     const themeCluster = getThemeCluster(theme.substr(1))

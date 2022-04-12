@@ -1,5 +1,5 @@
 
-import router from '/@/router/index'
+import router from '@/router/index'
 export type IPermissionType = 'or' | 'and'
 export function checkPermission(permission:string|Array<string>, type:IPermissionType = 'or'):boolean {
     const value:Array<string> = typeof permission === 'string' ? [permission] : permission

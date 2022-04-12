@@ -1,4 +1,4 @@
-import { useLayoutStore } from '/@/store/modules/layout'
+import { useLayoutStore } from '@/store/modules/layout'
 import axios from 'axios'
 import { AxiosResponse } from 'axios'
 import { ElLoading, ElNotification } from 'element-plus'
